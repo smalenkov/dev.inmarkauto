@@ -1,0 +1,25 @@
+default:
+  - 'jade'
+  - 'concat'
+  - 'less:build'
+
+dev:
+  - 'jade'
+  - 'concat'
+  - 'less:build'
+  - 'uglify'
+
+img:
+  - 'imagemin'
+
+les:
+  - 'less:build'
+
+watchjade:
+  - 'watch:jade'
+
+j:
+  - 'jade'
+
+s:
+  - 'sass'

@@ -1,0 +1,479 @@
+@charset "UTF-8";
+/*
+  Золотое сечение (золотая пропорция, деление в крайнем и среднем отношении) — деление непрерывной величины на две части в таком отношении, при котором меньшая часть так относится к большей, как большая ко всей величине. Далее идет формула расчета в результате которой мы получаем коэффициенты 1,6180339887 отношение большей части к меньшей и наоборот меньшая часть к большей относится как 0,6180339887
+*/
+/*
+  61,8%
+
+  38,2%
+  29,2%
+  25,7%
+  23,6%
+*/
+/*
+   Согласно результатам нашего исследования, в среднем соотношение между заголовком и основным текстом составляет примерно 2,5.
+
+   Заголовок / основной текст = 2,5
+ */
+/*
+  Традиционная шкала:
+  6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 21, 24, 36, 48, 60, 72
+
+  Последовательность Фибоначчи:
+  16, 24, 40, 64, 104
+*/
+/*
+  высота строки (в пикселях) / кегль основного текста (в пикселях) = 1.46
+
+  длина строки (в пикселях) ÷ высота строки (в пикселях) = 24.9
+
+  отступ между абзацами (в пикселях) ÷ высота строки (в пикселях) = 1.39
+*/
+/*
+  Как объясняет Роберт Брингхерст (Robert Bringhurst), согласно классическим правилам веб-типографики, оптимальное количество символов в строке составляет от 55 до 75
+*/
+/*
+  For xs-size style
+*/
+@media (min-width: 320px) and (max-width: 479px) {
+  .one-section-mh {
+    margin-bottom: 0.2rem;
+    height: 4.6rem;
+    overflow: hidden; } }
+
+@media (max-width: 479px) {
+  .content-title__main-h {
+    margin-bottom: 2rem; } }
+
+@media (max-width: 991px) {
+  .content-title__main-h {
+    margin-bottom: 2rem; } }
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .advantages__fulltext-col {
+    clear: left; }
+  .advantages__image-col {
+    float: left;
+    display: block;
+    width: 33.333333%;
+    height: 140px; }
+  .advantages__title-col {
+    margin-top: 12px;
+    width: 66%;
+    display: inline-block;
+    float: left; }
+  .advantages__elem {
+    border-bottom: 1px solid #eeeeee; }
+  .list-carbrand > li {
+    padding-right: 1em; }
+  .light-color-text {
+    text-align: left; } }
+
+@media (max-width: 767px) {
+  .content-title__top-text {
+    text-align: center; }
+  .content-title__main-h,
+  .main-title {
+    text-align: center; }
+  .advantages__elem:last-child {
+    border-bottom: 1px solid #ccc; }
+  .header__contacts {
+    min-height: 60px;
+    padding: 0px 15px;
+    border-bottom: 1px solid #ccc; }
+  .header-mobile {
+    margin-top: 66px; }
+  .header__p-phone {
+    float: left; }
+  .header__link-call {
+    float: left;
+    display: inline-block;
+    clear: left; }
+  .header__link-chat {
+    display: inline-block; }
+  .logo-mobile {
+    display: inline-block;
+    margin: 6px 0px 0px 15px;
+    overflow-y: hidden; }
+  .logo-mobile img {
+    width: 72%; }
+  .main-menu__fluid {
+    max-height: 50px; }
+  .advantages__title-h {
+    font-size: 1.8rem; } }
+
+@media (min-width: 992px) {
+  .content-title__main-h {
+    margin-bottom: 2rem; } }
+
+html, body {
+  font-size: 15px;
+  font-family: 'Arial', Helvetica, Verdana; }
+
+body {
+  margin: 0px;
+  line-height: 1.47;
+  color: #212121;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a {
+  color: #0B43C9;
+  text-decoration: none;
+  transition: color 0.2s ease 0s; }
+
+a:hover {
+  color: #8FABFF;
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0 0 1rem 0;
+  line-height: 1.1; }
+
+p {
+  font-size: inherit;
+  margin-bottom: 1rem; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2.4rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1.6rem; }
+
+h5 {
+  font-size: 1.2rem; }
+
+h6 {
+  font-size: 1rem; }
+
+small {
+  font-size: 90%;
+  color: #cacaca; }
+
+.font-90 {
+  font-size: 90%; }
+
+.base-lh {
+  line-height: 1.47; }
+
+#footer {
+  border-top: 1px solid #cccccc;
+  padding: 1.6rem 0; }
+
+.red {
+  color: #E52A00; }
+
+.light-color-text {
+  color: #AFAFAF; }
+
+.right {
+  text-align: right; }
+
+.bold {
+  font-weight: 700; }
+
+.margin-bt-15, .content__basic-group, .content__popular-carbrand {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.header__row {
+  padding: 1.4rem 0 1rem 0; }
+
+.header__site-desc {
+  color: #646464;
+  padding-top: 0.6rem;
+  line-height: 1.2;
+  font-size: 0.93333rem; }
+
+.header__p-phone {
+  font-size: 1.2rem;
+  margin-bottom: 2px; }
+
+.header__link-chat {
+  font-weight: 700; }
+
+.main-menu {
+  background-color: inherit;
+  border: 0px;
+  border-radius: 0px;
+  border-bottom: 1px solid #C8C8C8;
+  min-height: auto;
+  margin-bottom: 0px; }
+
+.main-menu__collapse {
+  padding: 0px; }
+
+.main-menu__items-list {
+  margin: 0rem 15px 10px 15px; }
+
+.main-menu__item {
+  padding: 0px 40px 0px 0px; }
+
+li.main-menu__item > a.main-menu__link {
+  padding: 0px;
+  font-size: 18px;
+  color: #0B43C9; }
+
+li.main-menu__item > a.main-menu__link:hover {
+  color: #8FABFF; }
+
+.menu-mobile {
+  padding: 0 10px 0 10px;
+  margin: 10px 0 0 0; }
+
+.menu-mobile > li {
+  border-bottom: 1px solid #EAEAEA;
+  list-style: none;
+  padding: 4px 8px; }
+
+.content-title {
+  margin-bottom: 4rem; }
+
+.content-title__top-text {
+  margin-top: 2.4rem; }
+
+.content-title__text {
+  margin-bottom: 1.8rem; }
+
+.content-title__second-h {
+  margin-bottom: 1.8rem; }
+
+.title-list {
+  font-size: 18px;
+  list-style: none;
+  text-align: left; }
+
+.title-list__elem {
+  margin-bottom: 1rem; }
+
+li.title-list__elem:before {
+  content: "—";
+  margin-left: -1.4em;
+  margin-right: 0.4em;
+  color: #E52A00; }
+
+.top-forms {
+  background-color: #4C88F4;
+  padding: 2.5rem 1.8rem 2rem 1.8rem; }
+
+.top-forms__submit-button {
+  margin-top: 1.8rem;
+  margin-bottom: 0; }
+
+.form-control-main {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  background-color: #D2CFFF;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+
+.form-control-main {
+  background-color: #8FABFF;
+  color: #ffffff;
+  border: 0;
+  -moz-placeholder: #ffffff;
+  -ms-input-placeholder: #ffffff; }
+  .form-control-main -webkit-input-placeholder {
+    color: #ffffff; }
+
+.form-control-main::-webkit-input-placeholder {
+  color: #E2E2E2; }
+
+.form-control-main::-webkit-input-placeholder {
+  color: #E2E2E2; }
+
+.form-control-main::-webkit-input-placeholder {
+  color: #E2E2E2; }
+
+.advantages {
+  margin-bottom: 3rem; }
+
+.advantages__elem {
+  padding: 2rem 1rem;
+  border-top: 1px solid #ccc; }
+
+.advantages__image-col,
+.advantages__title-col {
+  text-align: center; }
+
+.advantages__image-col {
+  height: auto; }
+
+.advantages__image-col img {
+  margin: auto; }
+
+.advantages__title-col {
+  height: 5em; }
+
+.advantages__title-h {
+  text-align: center; }
+
+.tabs-container {
+  margin-bottom: 3rem; }
+
+.tabs-container__links-box {
+  padding: 8px 0px 8px 15px;
+  background-color: #FBD493; }
+
+.tabs-container__link-list {
+  font-size: 1.1rem;
+  border: none; }
+
+.tabs-container__link-list > li.tabs-container__item {
+  float: none; }
+
+.tabs-container__link-list > li.active {
+  color: #555555;
+  background-color: #ffffff;
+  border: none;
+  cursor: default; }
+
+.tabs-container__link-list > li.active > a,
+.tabs-container__link-list > li.active > a:hover,
+.tabs-container__link-list > li.active > a:focus {
+  border: none; }
+
+.tabs-container__link-list > li.active > a.tabs-container__item-link {
+  background-color: #FFFFFF; }
+
+.tabs-container__item > a.tabs-container__item-link {
+  margin: 0.2em 0;
+  padding: 0.4em 0.6em;
+  border-radius: 0;
+  border: none;
+  color: #212121; }
+
+.tabs-container__item > a.tabs-container__item-link:hover {
+  background-color: #FCE4BA;
+  border-radius: 0px;
+  border: none;
+  color: #212121; }
+
+.tab-content {
+  padding-top: 1rem;
+  padding-left: 1.4rem; }
+
+.content__basic-sections {
+  background-color: #F0F0F0; }
+
+.one-section {
+  margin-bottom: 12px; }
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 2px; }
+
+.section-p {
+  line-height: 1.2;
+  font-size: 0.93333rem;
+  color: #646464; }
+
+.btn-section, .btn-section:hover, .btn-main-action, .btn-main-action:hover, .btn-main-action-lg, .btn-main-action-lg:active {
+  outline: none;
+  display: inline-block;
+  height: 2em;
+  padding: 0em 1em;
+  font-size: 1rem;
+  color: #212121;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
+  letter-spacing: 0.02rem;
+  vertical-align: middle;
+  border: 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background: #fff;
+  -webkit-box-shadow: 1px 0.9px 2.6px #9e9e9e;
+  -moz-box-shadow: 1px 0.9px 2.6px #9e9e9e;
+  box-shadow: 1px 0.9px 2.6px #9e9e9e; }
+
+.btn-section, .btn-section:hover {
+  font-size: 0.66667rem;
+  color: #000; }
+
+.btn-section {
+  border: solid 1px #A9A9A9; }
+
+.btn-section:hover {
+  border: solid 1px #606060; }
+
+.btn-main-action {
+  font-weight: normal;
+  font-size: 0.93333rem;
+  background: #2979FF;
+  color: #ffffff; }
+
+.btn-main-action:hover {
+  font-weight: normal;
+  font-size: 0.93333rem;
+  background: #639CFA;
+  color: #ffffff; }
+
+.btn-main-action-lg {
+  font-size: 1.06667rem;
+  background: #ffffff;
+  border: 0;
+  font-weight: normal;
+  -webkit-box-shadow: 1px 1px 5px #363636;
+  -moz-box-shadow: 1px 1px 5px #363636;
+  box-shadow: 1px 1px 5px #363636; }
+
+.btn-main-action-lg:active {
+  font-size: 1.06667rem;
+  background: #ffffff;
+  border: 0;
+  font-weight: normal;
+  -webkit-box-shadow: inset 1px 1px 5px #363636;
+  -moz-box-shadow: inset 1px 1px 5px #363636;
+  box-shadow: inset 1px 1px 5px #363636; }
+
+ul.list-carbrand {
+  margin: 0 0 15px 0;
+  padding: 0; }
+
+.list-carbrand > li {
+  list-style: none;
+  font-size: 1.1rem;
+  margin: 0px 0 2px 0px;
+  display: inline-block; }
+  @media (min-width: 768px) {
+    .list-carbrand > li {
+      width: 45%; } }
+
+.carbrand-footer-box {
+  font-size: 0.8rem;
+  margin-top: 20px; }
+
+.questions__bottom-box {
+  padding: 2.4rem 0; }
+
+.questions__list {
+  margin: 0 0 2rem 0;
+  padding: 0; }
+
+.questions__list-item {
+  list-style: none;
+  font-size: 1.2rem;
+  margin-bottom: 0.5em; }

@@ -1,0 +1,37 @@
+div {
+	display: block;
+}
+
+@light-blue: #F4F2F4;
+@border-gray: #DADADA;
+
+a {
+	color: #00045E;
+	&:hover {
+		color: #007AF4;
+	}
+}
+
+.bordered {
+  border-bottom: solid 1px @border-gray;
+}
+
+.header {
+	overflow: auto;
+}
+
+.menu-top {
+}
+
+.menu-top__item {
+	margin: 6px;
+	background-color: @light-blue;
+	float: left;
+	list-style: none;
+	padding: 5px 8px;
+	.bordered;
+}
+
+.content-box {
+	margin: 10px;
+}

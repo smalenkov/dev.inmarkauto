@@ -1,0 +1,114 @@
+/*
+  For xs-size style
+*/
+
+@media (min-width: 320px) and (max-width: 479px)
+{
+  .one-section-mh {
+      margin-bottom: 0.2rem;
+      height: 4.6rem;
+      overflow: hidden;
+  }
+}
+
+@media (max-width: 479px)
+{
+    .content-title__main-h
+    {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .content-title__main-h
+    {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px)
+{
+  .advantages__fulltext-col {
+    clear: left;
+  }
+  .advantages__image-col {
+    float: left;
+    display: block;
+    width: 33.333333%;
+    height: 140px;
+  }
+  .advantages__title-col {
+    margin-top: 12px;
+    width: 66%;
+    display: inline-block;
+    float: left;
+  }
+  .advantages__elem {
+    border-bottom: 1px solid #eeeeee;
+  }
+  .list-carbrand > li {
+  // width: 100%;
+  padding-right: 1em;
+  }
+  .light-color-text {
+  text-align: left;
+  }
+}
+
+@media (max-width: 767px)
+{
+    .content-title__top-text {
+      text-align: center;
+    }
+    .content-title__main-h,
+    .main-title {
+      text-align: center;
+    }
+    .advantages__elem:last-child {
+      border-bottom: 1px solid #ccc;
+    }
+    .header__contacts {
+      min-height: 60px;
+      padding: 0px 15px;
+      border-bottom: 1px solid #ccc;
+    }
+    .header-mobile {
+      margin-top: 66px;
+    }
+    .header__p-phone {
+      float: left;
+    }
+    .header__link-call {
+      float: left;
+      display: inline-block;
+      clear: left;
+    }
+    .header__link-chat {
+      display: inline-block;
+    }
+    .logo-mobile {
+      display: inline-block;
+      margin: 6px 0px 0px 15px;
+      overflow-y: hidden;
+      // height: 42px;
+    }
+    .logo-mobile img {
+      width: 72%;
+    }
+    .main-menu__fluid {
+      max-height: 50px;
+    }
+    .advantages__title-h {
+      font-size: 1.8rem;
+    }
+}
+
+
+@media (min-width: 992px)
+{
+    .content-title__main-h
+    {
+        margin-bottom: 2rem;
+    }
+}

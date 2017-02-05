@@ -1,0 +1,17 @@
+{
+  "name": "test bower",
+  "description": "test",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "test"
+  ],
+  "authors": [
+    "Vladimir Smalenkov"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
